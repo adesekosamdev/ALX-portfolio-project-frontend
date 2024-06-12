@@ -6,7 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import axios from 'axios';
 import './index.css';
 
-axios.defaults.baseURL = 'http://localhost:5001';
+const port = '5001';
+const localApiUrl = 'http://localhost:';
+const serverApiUrl = 'http://52.205.96.124:';
+
+axios.defaults.baseURL = serverApiUrl + port;
 axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('token')}`;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
