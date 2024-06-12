@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import NavBarAuth from '../components/NavBarAuth';
 
 const Login = ({ setAuthToken, setIsAuthenticated }) => {
-	const [error, setError] = useState("");
+	// const [error, setError] = useState("");
 	const navigate = useNavigate();
 
 	const [formData, setFormData] = useState({ email: '', password: '' });

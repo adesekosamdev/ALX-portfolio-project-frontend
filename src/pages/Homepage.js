@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../components/NavBar";
-import Piggy from "../images/Piggybank.svg";
 import { Link } from "react-router-dom";
 
 const Home = ({ isAuthenticated }) => {

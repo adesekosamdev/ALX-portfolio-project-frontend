@@ -7,7 +7,7 @@ import axios from 'axios';
 import './index.css';
 
 const port = '5001';
-const localApiUrl = 'http://localhost:';
+// const localApiUrl = 'http://localhost:';
 const serverApiUrl = 'http://52.205.96.124:';
 
 axios.defaults.baseURL = serverApiUrl + port;
