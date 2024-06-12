@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .custom-button {
+      @apply py-[10px] px-[17px] border-2 border-[#323D4D] rounded-md text-[18px] font-medium active:scale-105 transform duration-150;
+    }
+}
