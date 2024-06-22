@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import LogoutButton from '../components/LogoutButton';
+// import LogoutButton from '../components/LogoutButton';
 import NavBarUser from '../components/NavBarUser';
 import BudgetCard from '../components/BudgetCard';
 
