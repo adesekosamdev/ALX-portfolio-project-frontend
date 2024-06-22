@@ -18,8 +18,8 @@ function App() {
       setIsAuthenticated(true);
     }
   }, []);
-  console.log(authToken);
-  console.log(isAuthenticated);
+  // console.log(authToken);
+  // console.log(isAuthenticated);
 
   return (
     <Router>

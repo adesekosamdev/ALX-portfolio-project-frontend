@@ -6,11 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import axios from 'axios';
 import './index.css';
 
-const port = '5001';
-// const localApiUrl = 'https://localhost:';
-const serverApiUrl = 'https://web-02.bazzyx.tech:';
+// const port = '5001';
+const TEST_SERVER = 'http://localhost:5001';
+const LIVE_SERVER = 'https://alx-portfolio-project-backend.onrender.com';
 
-axios.defaults.baseURL = serverApiUrl + port;
+const url = window.location.host === "localhost:3000" ? TEST_SERVER : LIVE_SERVER;
+
+axios.defaults.baseURL = url;
 axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('token')}`;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
