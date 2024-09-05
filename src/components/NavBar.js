@@ -20,16 +20,19 @@ const NavBar = ({ isAuthenticated }) => {
 			{isAuthenticated ? (
 				<ul className="flex space-x-[20px] w-[300px] justify-end">
 					<Link to="/dashboard">
-						<li className="w-[110px] text-right">Dashboard</li>
+						{/* <li className="w-[110px] text-right">Dashboard</li> */}
+						<li className="w-[110px] text-right"></li>
 					</Link>
 				</ul>
 			) : (
 				<ul className="flex space-x-[20px] w-[300px] justify-end">
 					<Link to="/login">
-						<li className="w-[110px] text-right">Login</li>
+						{/* <li className="w-[110px] text-right">Login</li> */}
+						<li className="w-[110px] text-right"></li>
 					</Link>
 					<Link to="/register">
-						<li className="w-[110px] text-right">Register</li>
+						{/* <li className="w-[110px] text-right">Register</li> */}
+						<li className="w-[110px] text-right"></li>
 					</Link>
 				</ul>
 			)}

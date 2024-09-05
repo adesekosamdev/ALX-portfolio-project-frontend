@@ -18,7 +18,7 @@ const Home = ({ isAuthenticated }) => {
 							</div>
 						</div>
 						<button className="custom-button bg-[#165FC2] border-0 text-white max-w-[220px] lg:h-[60px]">
-							<Link to='/register'>Get Started Free</Link>
+							<Link to='/home'>Get Started Free</Link>
 						</button>
 					</section>
 					<section className="absolute right-0 bottom-0  bg-[url('/src/images/Piggybank.svg')] bg-contain bg-no-repeat h-[618px] w-[633px] px-[20px]">

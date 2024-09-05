@@ -7,10 +7,10 @@ import axios from 'axios';
 import './index.css';
 
 // const port = '5001';
-const TEST_SERVER = 'http://localhost:5001';
+const DEV_SERVER = process.env.REACT_APP_SERVER_URL;
 const LIVE_SERVER = 'https://alx-portfolio-project-backend.onrender.com';
 
-const url = window.location.host === "localhost:3000" ? TEST_SERVER : LIVE_SERVER;
+const url = window.location.host === "localhost:3000" ? DEV_SERVER : LIVE_SERVER;
 
 axios.defaults.baseURL = url;
 axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('token')}`;
